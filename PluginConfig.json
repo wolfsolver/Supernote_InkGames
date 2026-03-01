@@ -1,0 +1,11 @@
+﻿{
+    "pluginID": "08qosgljoy9coann",
+    "pluginKey": "InkGames",
+    "iconPath": "./assets/InkGames_icon.png",
+    "desc": "InkGames transforms your Supernote into a limitless puzzle book. It generates offline Sudoku, Mazes, WordSearch, and Nonograms designed for the authentic feel of pen and paper. Enjoy a minimalist, high-contrast interface optimized for E-ink, where you solve classic challenges with your digital stylus. No UI clutter—just you, your pen, and your logic.",
+    "name": "InkGames",
+    "versionCode": "1",
+    "versionName": "0.0.1",
+    "jsMainPath": "index",
+    "author": "WolfSolver"
+}
