@@ -2,6 +2,8 @@
 
 > *"No UI clutter—just you, your pen, and your logic."*
 
+
+[INFO]
 > **Supernote** is a next-generation E-Ink device designed to provide a natural, distraction-free writing experience, blending the tactile feel of traditional paper with the digital versatility of an Android-based tablet. For more info, visit [supernote.com](https://supernote.com).
 
 **InkGames** is a minimalist, mainly offline **puzzle generator** designed specifically for Supernote E-ink devices. It is **not an interactive gaming app** in the traditional sense; instead, it acts as a digital printing house for your device.
