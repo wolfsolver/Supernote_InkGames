@@ -8,6 +8,12 @@ The goal of this project is to generate high-quality, paper-style puzzle grids t
 *   **Generator, Not Player**: The app creates the challenge (Sudoku, Maze, etc.) but does not "manage" the gameplay. No timers, no auto-checks, no "fill-in" buttons.
 *   **Stylus-First**: Once a puzzle is generated, you insert it into a Note and solve it exactly as you would on paper—with your pen and your logic.
 
+## 📸 Screenshots
+
+| Main Menu | Game Configuration | Puzzle in Note |
+|:---:|:---:|:---:|
+| ![Main Menu](screenshot/Menu.png) | ![Sudoku Config](screenshot/Sudoku-Gen.png) | ![Sample Note](screenshot/Sample%20Note.png) |
+
 ## ✨ Key Features
 
 * **Insert into Note**: Every puzzle can be instantly captured and inserted as an image into your current note.

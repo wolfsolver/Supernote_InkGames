@@ -10,6 +10,7 @@ import SudokuOnLineView from './SudokuOnLine/SudokuOnLineView';
 import AMazeView from './AMazeJs/AMazeView';
 import GenerateMazeView from './Mazes/GenerateMazeView';
 import WordFindView from './WordFind/WordFindView';
+import NonogramView from './Nonogram/NonogramView';
 
 interface MainProps {
     onClose: () => void;
@@ -73,6 +74,10 @@ const Main = ({ onClose }: MainProps) => {
 
     if (selectedGame === 'WordFind') {
         return <WordFindView onBack={() => setSelectedGame(null)} />;
+    }
+
+    if (selectedGame === 'Nonogram') {
+        return <NonogramView onBack={() => setSelectedGame(null)} />;
     }
 
     return (
