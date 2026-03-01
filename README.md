@@ -1,5 +1,7 @@
 # 🖋️ InkGames for Supernote
 
+> *"No UI clutter—just you, your pen, and your logic."*
+
 **InkGames** is a minimalist, mainly offline **puzzle generator** designed specifically for Supernote E-ink devices. It is **not an interactive gaming app** in the traditional sense; instead, it acts as a digital printing house for your device.
 
 The goal of this project is to generate high-quality, paper-style puzzle grids that you can "insert" into your notes and solve manually using your Supernote stylus. It bridges the gap between digital convenience and the tactile satisfaction of a physical puzzle book.
@@ -37,7 +39,3 @@ The app supports a modular engine-based approach defined in the configuration:
 
 * **Framework**: React Native (Supernote Plugin SDK).
 * **Language**: TypeScript.
-
----
-
-> *"No UI clutter—just you, your pen, and your logic."*
