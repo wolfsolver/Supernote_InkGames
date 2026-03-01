@@ -8,6 +8,7 @@ import pluginConfig from '../PluginConfig.json';
 import SudokuView from './SudokuGen/SudokuView';
 import SudokuOnLineView from './SudokuOnLine/SudokuOnLineView';
 import AMazeView from './AMazeJs/AMazeView';
+import GenerateMazeView from './Mazes/GenerateMazeView';
 
 interface MainProps {
     onClose: () => void;
@@ -63,6 +64,10 @@ const Main = ({ onClose }: MainProps) => {
 
     if (selectedGame === 'AMazeJs') {
         return <AMazeView onBack={() => setSelectedGame(null)} />;
+    }
+
+    if (selectedGame === 'GenerateMaze') {
+        return <GenerateMazeView onBack={() => setSelectedGame(null)} />;
     }
 
     return (

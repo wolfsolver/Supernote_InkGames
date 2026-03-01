@@ -13,6 +13,9 @@ export interface Settings {
     AMazeJs: boolean;
     AMazeJs_DefaultSize: { rows: number, cols: number };
     GenerateMaze: boolean;
+    GenerateMaze_DefaultSize: { rows: number, cols: number };
+    GenerateMaze_DefaultAlgorithm: string;
+    GenerateMaze_DefaultShape: string;
     WordFind: boolean;
     WordFind_Dictionaty: string;
     Nonogram: boolean
@@ -27,6 +30,9 @@ export const DEFAULT_SETTINGS: Settings = {
     AMazeJs: true,
     AMazeJs_DefaultSize: { rows: 35, cols: 35 },
     GenerateMaze: true,
+    GenerateMaze_DefaultSize: { rows: 30, cols: 30 },
+    GenerateMaze_DefaultAlgorithm: 'recursiveBacktrack',
+    GenerateMaze_DefaultShape: 'square',
     WordFind: true,
     WordFind_Dictionaty: './asset/en-common.txt',
     Nonogram: true
@@ -50,7 +56,7 @@ export const GAMES_CONFIG = {
         icon: '🕸️',
     },
     WordFind: {
-        title: 'Word Search (via WordFind',
+        title: 'Word Search (via WordFind)',
         icon: '🔍',
     },
     Nonogram: {
