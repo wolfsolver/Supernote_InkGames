@@ -34,7 +34,7 @@ export const DEFAULT_SETTINGS: Settings = {
     GenerateMaze_DefaultAlgorithm: 'recursiveBacktrack',
     GenerateMaze_DefaultShape: 'square',
     WordFind: true,
-    WordFind_Dictionaty: './asset/en-common.txt',
+    WordFind_Dictionaty: './assets/en-common.txt',
     Nonogram: true
 };
 
