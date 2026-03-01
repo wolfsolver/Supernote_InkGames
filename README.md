@@ -6,6 +6,11 @@
 
 The goal of this project is to generate high-quality, paper-style puzzle grids that you can "insert" into your notes and solve manually using your Supernote stylus. It bridges the gap between digital convenience and the tactile satisfaction of a physical puzzle book.
 
+## 🚀 Download & Install
+You can find the latest stable version of the plugin as a `.snplg` file on the **[Releases Page](https://github.com/wolfsolver/Supernote_InkGames/releases/latest)**.
+
+---
+
 ## 🧠 Philosophy: Manual Solving
 *   **Generator, Not Player**: The app creates the challenge (Sudoku, Maze, etc.) but does not "manage" the gameplay. No timers, no auto-checks, no "fill-in" buttons.
 *   **Stylus-First**: Once a puzzle is generated, you insert it into a Note and solve it exactly as you would on paper—with your pen and your logic.
