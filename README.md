@@ -16,7 +16,8 @@ The goal of this project is to generate high-quality, printable-style game grids
 
 The app supports a modular engine-based approach defined in the configuration:
 
-* 🔢 **Sudoku**: Infinite grids via `SudokuGen`.
+* 🔢 **Sudoku**: Infinite grids via `Sudoku.JS` (powered by [sudoku.js](https://github.com/robatron/sudoku.js)).
+* 🔢 **Sudoku**: Infinite grids via `Dosuku` (powered by [SudokuApi](https://github.com/Marcus0086/SudokuApi/)).
 * 🌀 **Mazes**: Procedurally generated labyrinths using `AMazeJs` or `GenerateMaze`.
 * 🔍 **Word Search**: Find hidden words from common dictionaries using `WordFind`.
 * ⬛ **Nonograms**: Logical picture puzzles optimized for digital ink.

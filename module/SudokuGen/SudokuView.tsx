@@ -95,6 +95,9 @@ const SudokuView = ({ onBack }: SudokuViewProps) => {
 
         return (
             <View ref={viewRef} collapsable={false} style={styles.captureContainer}>
+                <View style={styles.row}>
+                    <Text style={styles.title}>{GAMES_CONFIG.SudokuGen.title}</Text>
+                </View>
                 <View style={styles.gridHeader}>
                     <Text style={styles.headerText}>LEVEL: {puzzle.difficulty}</Text>
                     <Text style={styles.headerText}>{dateStr} {timeStr}</Text>

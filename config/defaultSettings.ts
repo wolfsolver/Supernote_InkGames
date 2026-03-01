@@ -32,27 +32,27 @@ export const DEFAULT_SETTINGS: Settings = {
 
 export const GAMES_CONFIG = {
     SudokuGen: {
-        title: 'Sudoku (via SudokuGen Engine)',
+        title: 'Sudoku (via Sudoku.js)',
         icon: '🔢',
     },
     SudokuOnLine: {
-        title: 'Sudoku (via https://sudoku-api.vercel.app/api/dosuku)',
+        title: 'Sudoku (via dosuku API)',
         icon: '🔢',
     },
     AMazeJs: {
-        title: 'Maze (via AMazeJs Engine)',
+        title: 'Maze (via AMazeJs)',
         icon: '🌀',
     },
     GenerateMaze: {
-        title: 'Maze (via GenerateMaze Engine)',
+        title: 'Maze (via GenerateMaze)',
         icon: '🕸️',
     },
     WordFind: {
-        title: 'Word Search (via WordFind Engine)',
+        title: 'Word Search (via WordFind',
         icon: '🔍',
     },
     Nonogram: {
-        title: 'Nonogram (via Nonogram Engine)',
+        title: 'Nonogram (via Nonogram)',
         icon: '⬛',
     },
 } as const

@@ -6,6 +6,7 @@ import { GAMES_CONFIG } from '../config/defaultSettings';
 //import config from '../app.json';
 import pluginConfig from '../PluginConfig.json';
 import SudokuView from './SudokuGen/SudokuView';
+import SudokuOnLineView from './SudokuOnLine/SudokuOnLineView';
 
 interface MainProps {
     onClose: () => void;
@@ -53,6 +54,10 @@ const Main = ({ onClose }: MainProps) => {
 
     if (selectedGame === 'SudokuGen') {
         return <SudokuView onBack={() => setSelectedGame(null)} />;
+    }
+
+    if (selectedGame === 'SudokuOnLine') {
+        return <SudokuOnLineView onBack={() => setSelectedGame(null)} />;
     }
 
     return (
