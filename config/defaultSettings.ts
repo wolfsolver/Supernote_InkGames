@@ -11,6 +11,7 @@ export interface Settings {
     SudokuGen_DefaultDifficulty: number;
     SudokuOnLine: boolean;
     AMazeJs: boolean;
+    AMazeJs_DefaultSize: { rows: number, cols: number };
     GenerateMaze: boolean;
     WordFind: boolean;
     WordFind_Dictionaty: string;
@@ -24,6 +25,7 @@ export const DEFAULT_SETTINGS: Settings = {
     SudokuGen_DefaultDifficulty: 53,
     SudokuOnLine: true,
     AMazeJs: true,
+    AMazeJs_DefaultSize: { rows: 35, cols: 35 },
     GenerateMaze: true,
     WordFind: true,
     WordFind_Dictionaty: './asset/en-common.txt',
@@ -55,4 +57,4 @@ export const GAMES_CONFIG = {
         title: 'Nonogram (via Nonogram)',
         icon: '⬛',
     },
-} as const
+} as const;

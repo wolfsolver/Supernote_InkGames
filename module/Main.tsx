@@ -7,6 +7,7 @@ import { GAMES_CONFIG } from '../config/defaultSettings';
 import pluginConfig from '../PluginConfig.json';
 import SudokuView from './SudokuGen/SudokuView';
 import SudokuOnLineView from './SudokuOnLine/SudokuOnLineView';
+import AMazeView from './AMazeJs/AMazeView';
 
 interface MainProps {
     onClose: () => void;
@@ -58,6 +59,10 @@ const Main = ({ onClose }: MainProps) => {
 
     if (selectedGame === 'SudokuOnLine') {
         return <SudokuOnLineView onBack={() => setSelectedGame(null)} />;
+    }
+
+    if (selectedGame === 'AMazeJs') {
+        return <AMazeView onBack={() => setSelectedGame(null)} />;
     }
 
     return (

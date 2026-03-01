@@ -18,7 +18,8 @@ The app supports a modular engine-based approach defined in the configuration:
 
 * 🔢 **Sudoku**: Infinite grids via `Sudoku.JS` (powered by [sudoku.js](https://github.com/robatron/sudoku.js)).
 * 🔢 **Sudoku**: Infinite grids via `Dosuku` (powered by [SudokuApi](https://github.com/Marcus0086/SudokuApi/)).
-* 🌀 **Mazes**: Procedurally generated labyrinths using `AMazeJs` or `GenerateMaze`.
+* 🌀 **Mazes**: Procedurally generated labyrinths using `AMazeJs` (using [amaze](https://github.com/erniehs-zz/amaze)). You need to start from top left to bottom right.
+* 🌀 **Mazes**: Procedurally generated labyrinths using `GenerateMaze` (using [mazes](https://github.com/codebox/mazes)).
 * 🔍 **Word Search**: Find hidden words from common dictionaries using `WordFind`.
 * ⬛ **Nonograms**: Logical picture puzzles optimized for digital ink.
 
@@ -26,16 +27,6 @@ The app supports a modular engine-based approach defined in the configuration:
 
 * **Framework**: React Native (Supernote Plugin SDK).
 * **Language**: TypeScript.
-* **State Management**: Context-based settings provider.
-* **Styling**: High-contrast Black & White CSS for E-ink.
-
-
-## ⚙️ Configuration
-
-The application's "Source of Truth" is located in `src/config/defaultSettings.ts`. You can:
-* Toggle specific engines on/off.
-* Change the default theme (Light/Dark).
-* Update the dictionary path for Word Search.
 
 ---
 

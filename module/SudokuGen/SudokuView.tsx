@@ -14,17 +14,23 @@ interface SudokuViewProps {
 }
 
 const SudokuView = ({ onBack }: SudokuViewProps) => {
-    const { settings, updateSettings } = useSettings();
-    const [givens, setGivens] = useState(settings.SudokuGen_DefaultDifficulty);
+    const { settings, updateSettings, isLoading } = useSettings();
+    const [givens, setGivens] = useState(53); // Default medium
     const [puzzle, setPuzzle] = useState<SudokuPuzzle | null>(null);
     const [isExporting, setIsExporting] = useState(false);
     const [isGenerating, setIsGenerating] = useState(false);
+    const [hasInited, setHasInited] = useState(false);
     const viewRef = useRef<View>(null);
 
-    // Genera un puzzle all'avvio (default Easy)
+    // Genera un puzzle all'avvio basandosi sui settings
     useEffect(() => {
-        handleGenerate(settings.SudokuGen_DefaultDifficulty);
-    }, []);
+        if (!isLoading && !hasInited) {
+            const initialDiff = settings?.SudokuGen_DefaultDifficulty || 53;
+            setGivens(initialDiff);
+            handleGenerate(initialDiff);
+            setHasInited(true);
+        }
+    }, [isLoading, settings]);
 
     const handleGenerate = (diff: number) => {
         setIsGenerating(true);
@@ -144,7 +150,12 @@ const SudokuView = ({ onBack }: SudokuViewProps) => {
             <Text style={styles.title}>{GAMES_CONFIG.SudokuGen.title}</Text>
             <Text style={styles.subtitle}>v{pluginConfig.versionName} by {pluginConfig.author}</Text>
 
-            {puzzle ? (
+            {isLoading ? (
+                <View style={styles.initialLoader}>
+                    <ActivityIndicator size="large" color="#000" />
+                    <Text style={styles.loaderText}>Loading Settings...</Text>
+                </View>
+            ) : puzzle ? (
                 <>
                     <Text style={styles.subtitle}>Difficulty: {puzzle.difficulty}</Text>
 
